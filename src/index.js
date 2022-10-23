@@ -19,6 +19,7 @@ function onInput() {
   if (searchQuery.length === 0) {
     clearСountriesList();
     clearСountryInfo();
+    return;
   }
 
   fetchCountries(searchQuery)
